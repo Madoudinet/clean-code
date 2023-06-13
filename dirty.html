@@ -1,0 +1,117 @@
+<!-- Je met un commentaire chaque fois que je vois une erreur! -->
+<!-- lang="fr" -->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- mauvais encodage -->
+        <meta charset="utf-8" />
+        <!-- Absence de la meta viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="ordinateur, disque dur, mémoire vive, carte mère, moniteur, SSD, clavier mécanique"
+        />
+        <!-- Absence de balise title -->
+        <title>Techlab - Accueil</title>
+    </head>
+    <body>
+        <!-- Balise sémantique (header) -->
+        <header>
+            <nav>
+                <!-- Liens internes, href erronés -->
+                <a href="#home">Accueil</a>
+                <a href="#produits">Produits</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero" id="home">
+        
+        <!-- Les titres important à moins important n'est pas respecté (h3 avant h1 et h2) -->
+        <h1>
+            Bienvenue sur TechLab.com, le premier distributeur de matériel
+            informatique en France.
+        </h1>
+        <a href="#contact">Contact</a>
+        <a href="#services">Services</a>
+    </section>
+
+        <section id="produits">
+            <h2>Nos différents produits</h2>
+            <article>
+                <h3>Carte mère : MSI MAG B550 TOMAHAWK</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro adipisci ut laborum itaque, tenetur hic.
+                </p>
+                <button>Caractéristiques</button>
+            </article>
+            <article>
+                <h3>
+                    RAM : Corsair Vengeance LPX Black DDR4 2 x 16 Go 3200 MHz
+                    CAS 16
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro adipisci ut laborum itaque, tenetur hic.
+                </p>
+                <button>Caractéristiques</button>
+            </article>
+            <article>
+                <h3>Carte graphique : Gigabyte GeForce RTX 3090 XTREME 24G</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro adipisci ut laborum itaque, tenetur hic.
+                </p>
+                <button>Caractéristiques</button>
+            </article>
+        </section>
+        <section>
+            <h2>Nos services</h2>
+            <div>
+                <h3>Réparation d'ordinateur</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium magni, modi assumenda at laborum praesentium
+                    facilis inventore facere a dolorem.
+                </p>
+                <!-- manque de texte alternatif -->
+                <img src="laptop.jpg" alt="blabla" />
+            </div>
+            <div>
+                <h3>Reprise de matériel d'occasion</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia totam molestias ullam, porro ut nam.
+                </p>
+                <!-- manque de texte alternatif -->
+                <img src="money.jpg" alt="blabla" />
+            </div>
+        </section>
+        <section id="contact">
+            <!-- Le h1 doit être en haut de page(?) -->
+            <h2>Une question ? Contactez-nous !</h2>
+            <form>
+                <!-- le type de l'input n'est pas le bon -->
+                <label for="email">Votre mail</label>
+                <!-- Il n'y a pas d'id pour le lien entre l'input et le label -->
+                <input type="email" name="email" id="email"/>
+                <!-- il y a un input en trop, ou bien il manque un label? -->
+                <label for="name">Votre nom</label>
+                <input type="text" name="name" id="name"/>
+
+                <label for="message" name="message">Votre message</label>
+                <textarea id="message"></textarea>
+
+                <!-- Ce n'est pas la bonne balise utilisé -->
+                <!-- <button type="submit">Submit</button> -->
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+      
+    </main>  
+    <!-- manque de balise p -->
+        <footer>
+            <span>Tous droits réservés</span>
+        </footer>
+    </body>
+</html>
